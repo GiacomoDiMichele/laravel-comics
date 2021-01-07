@@ -13,7 +13,7 @@
         @section('content')
         <div class="section-list-films">
             <div class="container">
-                <div class="list-films">
+                <div class="list-films clearfix">
                     @foreach ($series as $single_serie)
                     <div class="single-film">
                         <div class="img-film">

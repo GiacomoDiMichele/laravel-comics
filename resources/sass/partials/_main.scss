@@ -1,0 +1,9 @@
+.list-films {
+    display: flex;
+    flex-wrap: wrap;
+
+    .single-film {
+        flex-basis: 140px;
+        margin: 20px;
+    }
+}

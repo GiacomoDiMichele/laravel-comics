@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+}
+
+.logo-page {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.navbar-links {
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin: 0px 10px;
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.search-bar {
+    height: 100%;
+    width: 10%;
+    float: left;
+}

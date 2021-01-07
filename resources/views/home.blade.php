@@ -11,7 +11,20 @@
         @extends('layouts.app')
 
         @section('content')
-            <h1>prova</h1>
+        <div class="section-list-films">
+            <div class="container">
+                <div class="list-films">
+                    @foreach ($series as $single_serie)
+                    <div class="single-film">
+                        <div class="img-film">
+                            <img src="{{ $single_serie['thumb'] }}" alt="">
+                        </div>
+                        {{ $single_serie['title'] }}
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
         @endsection
     </body>
 </html>

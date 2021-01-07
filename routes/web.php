@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $array_series = config('series');
+    $data = [
+        'series' => $array_series
+    ];
+    return view('home', $data);
 });

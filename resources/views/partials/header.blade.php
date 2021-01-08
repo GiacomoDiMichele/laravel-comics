@@ -40,7 +40,7 @@
                     </ul>
                 </div>
                 <div class="search-bar">
-                    <h1>prova</h1>
+                    
                 </div>
             </div>
         </div>

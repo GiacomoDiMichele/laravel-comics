@@ -1,0 +1,120 @@
+.footer-top {
+    background-image: url('/images/footer-bg.jpg');
+    background-size: cover;
+
+    .footer-top-container {
+        background-image: url('/images/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 35px 0px;
+
+        .footer-top-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .footer-top-links {
+
+                .footer-top-links-title {
+                    color: white;
+                    font-size: 1.2em;
+                    margin-bottom: 18px;
+                }
+
+                ul {
+                    list-style-type: none;
+                    margin-right: 23px;
+                    margin-bottom: 15px;
+
+                    li {
+                        margin: 5px 0;
+
+                        a {
+                            color: grey;
+                            font-size: 0.9em;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-top-cookies {
+
+        p {
+            color: grey;
+            font-size: 12px;
+            margin: 0;
+
+            a {
+                color: #13538F;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    background: #303030;;
+    padding: 25px 0px;
+
+    .footer-bottom-left {
+
+        a {
+            color: white;
+            font-size: 1.6em;
+            border: 2px solid #0282F9;
+            padding: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+
+    .footer-bottom-left, .footer-bottom-right {
+        float: left;
+        width: 50%;
+    }
+
+    .section-contacts {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        h4 {
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .links-contatcs {
+            color: #0282F9;
+            font-size: 1.4em;
+            line-height: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li{
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            @each $icon in $footer_socials {
+                li.#{$icon} {
+                    background-image: url('/images/footer-#{$icon}.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            a {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

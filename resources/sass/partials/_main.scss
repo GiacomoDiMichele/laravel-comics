@@ -1,9 +1,33 @@
-.list-films {
-    display: flex;
-    flex-wrap: wrap;
+.section-list-films {
+    background-color: #3f3f3f;
 
-    .single-film {
-        flex-basis: 140px;
-        margin: 20px;
+    .list-films {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px 0px;
+
+        .single-film {
+            flex-basis: 140px;
+            margin: 20px;
+
+            .img-film {
+                width: 170px;
+                height: 170px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+            }
+
+            p {
+                font-size: 1.0em;
+                text-transform: uppercase;
+                color: white;
+                padding: 10px 0px;
+            }
+        }
     }
 }

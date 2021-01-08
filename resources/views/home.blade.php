@@ -19,7 +19,7 @@
                         <div class="img-film">
                             <img src="{{ $single_serie['thumb'] }}" alt="">
                         </div>
-                        {{ $single_serie['title'] }}
+                        <p>{{ $single_serie['title'] }}</p>
                     </div>
                     @endforeach
                 </div>

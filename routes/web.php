@@ -20,3 +20,17 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+Route::get('/dettagli/{id}', function ($id) {
+
+    $array_series = config('series');
+
+    $singolo_film = $array_series[$id];
+
+    $data = [
+        'film' => $singolo_film
+    ];
+
+    return view('dettagli', $data);
+
+})->name('dettagli-film');

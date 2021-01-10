@@ -14,13 +14,15 @@
         <div class="section-list-films">
             <div class="container">
                 <div class="list-films clearfix">
-                    @foreach ($series as $single_serie)
-                    <div class="single-film">
-                        <div class="img-film">
-                            <img src="{{ $single_serie['thumb'] }}" alt="">
+                    @foreach ($series as $i => $single_serie)
+                        <div class="single-film">
+                            <a href="{{ route('dettagli-film', ['id' => $i]) }}">
+                                <div class="img-film">
+                                    <img src="{{ $single_serie['thumb'] }}" alt="">
+                                </div>
+                                <p>{{ $single_serie['title'] }}</p>
+                            </a>
                         </div>
-                        <p>{{ $single_serie['title'] }}</p>
-                    </div>
                     @endforeach
                 </div>
             </div>

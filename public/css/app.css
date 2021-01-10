@@ -50,11 +50,34 @@
      object-position: top center;
 }
 
+.section-list-films .list-films .single-film a {
+  text-decoration: none;
+}
+
 .section-list-films .list-films .single-film p {
   font-size: 1em;
   text-transform: uppercase;
   color: white;
   padding: 10px 0px;
+}
+
+.section-dettagli .info-film .dettagli-film {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.section-dettagli .info-film .dettagli-film h2 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.section-dettagli .info-film .dettagli-film p {
+  font-size: 1.1em;
+  padding: 10px;
 }
 
 header {
